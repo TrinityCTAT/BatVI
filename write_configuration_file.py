@@ -46,6 +46,10 @@ def main():
     # FastQs
     fastq1 = args.fastq1
     fastq2 = args.fastq2
+
+    fastq1 = os.path.abspath(fastq1)
+    fastq2 = os.path.abspath(fastq2)
+    
     # human references
     Human_BLAST_Index_input = args.Human_BLAST_Index
     Human_BatIndex_input = args.Human_BatIndex
