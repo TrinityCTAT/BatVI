@@ -136,7 +136,7 @@ def main():
     #########################################
     # Create the File List 
     #########################################
-    a = f"{fastq1};{fastq2};{insertion_length}"
+    a = f"{fastq1};{fastq2};{insertion_length}\n"
     print("#~~~~~~~~~~~~~~~~~~~~~~~~\nWriting FileList.txt file\n#~~~~~~~~~~~~~~~~~~~~~~~~")
     output_file = open("filelist.txt", "w")
     output_file.write(a)
